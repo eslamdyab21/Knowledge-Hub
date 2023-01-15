@@ -1,0 +1,53 @@
+{
+  "filePreviewOnHover": false,
+  "markSans": false,
+  "makeMenuPlaceholder": true,
+  "mobileMakeBar": true,
+  "inlineStyler": true,
+  "makerMode": true,
+  "inlineStylerColors": true,
+  "editorFlow": true,
+  "internalLinkClickFlow": true,
+  "saveAllContextToFrontmatter": false,
+  "editorFlowStyle": "seamless",
+  "autoOpenFileContext": false,
+  "spacesCompactMode": false,
+  "spacesEnabled": false,
+  "spacesPerformance": false,
+  "enableFolderNote": true,
+  "revealActiveFile": false,
+  "spacesStickers": false,
+  "spacesDisablePatch": false,
+  "folderNoteInsideFolder": true,
+  "sidebarTabs": true,
+  "showRibbon": true,
+  "deleteFileOption": "trash",
+  "expandedFolders": {},
+  "expandedSpaces": [
+    "/",
+    null
+  ],
+  "folderRank": {
+    "node": "root",
+    "children": [],
+    "isFolder": true
+  },
+  "openFolders": [],
+  "fileIcons": [],
+  "spaces": [],
+  "pinnedSpaces": [],
+  "menuTriggerChar": "/",
+  "emojiTriggerChar": ":",
+  "folderContextFile": "context",
+  "tagContextFolder": "Context",
+  "hiddenFiles": [
+    "Context"
+  ],
+  "hiddenExtensions": [
+    "mdb"
+  ],
+  "vaultSort": [
+    "rank",
+    true
+  ]
+}
