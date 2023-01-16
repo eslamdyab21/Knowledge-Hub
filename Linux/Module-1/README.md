@@ -14,41 +14,41 @@ date: 2022-06-30
 
 # Table of Contents
 ### [Bash-scripting](#Bash-scripting)
-        Variables
-        Conditions
-        Numeric compactors
-        String operations
-        Passing arguments to a script
-        Reading user input
-        Loops
-        Functions
+- Variables
+- Conditions
+- Numeric compactors
+- String operations
+- Passing arguments to a script
+- Reading user input
+- Loops
+- Functions
 
 ### [Environment-variables](#Environment-variables)
-        Intro to environment variables
-        Benefits of environment variables
-        Operations on environment variables
-        The PATH environment variable
+- Intro to environment variables
+- Benefits of environment variables
+- Operations on environment variables
+- The PATH environment variable
    
 ### [Linux-commands](#Linux-commands)
 ### [Manage-users-and-groups-and-their-permissions](#Manage-users-and-groups-and-their-permissions)
 ### [Owners-and-permissions](#Owners-and-permissions)
-    Ownership
-    Permissions
+- Ownership
+- Permissions
 
 ### [Package-manager](#Package-manager)
-    APT
-    Snap
-    PPA Repository
-    Different source based distributions have different package mangers
+- APT
+- Snap
+- PPA Repository
+- Different source based distributions have different package mangers
 
 ### [Pipelines](#Pipelines)
- -    Pipelines with less
- -  Pipelines with grep
- -   Redirecting
+ - Pipelines with less
+ - Pipelines with grep
+ - Redirecting
 
 ### [Vim-editor](#Vim-editor)
-    Basics
-    Some useful commands/shortcuts
+- Basics
+- Some useful commands/shortcuts
 
 
 # Bash-scripting
