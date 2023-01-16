@@ -12,25 +12,48 @@ date: 2022-06-30
 ---
 
 
+# Table of Contents
+### [Bash-scripting](#Bash-scripting)
+        Variables
+        Conditions
+        Numeric compactors
+        String operations
+        Passing arguments to a script
+        Reading user input
+        Loops
+        Functions
+
+### [Environment-variables](#Environment-variables)
+        Intro to environment variables
+        Benefits of environment variables
+        Operations on environment variables
+        The PATH environment variable
+   
+### [Linux-commands](#Linux-commands)
+### [Manage-users-and-groups-and-their-permissions](#Manage-users-and-groups-and-their-permissions)
+### [Owners-and-permissions](#Owners-and-permissions)
+    Ownership
+    Permissions
+
+### [Package-manager](#Package-manager)
+    APT
+    Snap
+    PPA Repository
+    Different source based distributions have different package mangers
+
+### [Pipelines](#Pipelines)
+ -    Pipelines with less
+ -  Pipelines with grep
+ -   Redirecting
+
+### [Vim-editor](#Vim-editor)
+    Basics
+    Some useful commands/shortcuts
+
 
 # Bash-scripting
 
 
-[Variables](#Variables)
-
-[Conditions](#Conditions)
-
-[Numeric compactors](#90725ef0-b056-49c9-bbcd-4a1cc42752fe)
-
-[String operations](#b99b9d61-2b57-4696-b700-1a1bd96e7c5e)
-
-[Passing arguments to a script](#25368090-6f2d-4aac-a364-8df251908143)
-
-[Reading user input](#29cb6cd4-a09b-4600-b2de-cf8b39358e51)
-
-[Loops](#2bdd13f6-5cb7-4cec-a63b-7829cc87681d)
-
-[Functions](#6db1a98f-b7a7-4ff3-963f-2a99621f3afa)
 
 *   it’s a way to execute more than one command together. the commands are written in bash files `file.sh` , the first line (shebang #!) must reference the bash location, by default it’s `#!/bin/bash` . to run the bash file: `./file.sh` or `bash file.sh` or `/bin/bash file.sh` 
     

@@ -13,26 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux.md",
+                "file": "Linux/Module-1/README.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "49732b1ebefff49c",
+            "id": "d69d84ec298fcd15",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Linux/Module-1/Bash-scripting.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Linux/Module-1/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Linux/Module-1/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +160,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314.5
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,17 +172,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "49732b1ebefff49c",
+  "active": "6ebe1dcbb2d6a37d",
   "lastOpenFiles": [
-    "Linux/Vim-editor.md",
-    "Linux/Pipelines.md",
-    "Linux/Package-manager.md",
-    "Linux/Owners-and-permissions.md",
-    "Linux/Manage-users-and-groups-and-their-permissions.md",
-    "Linux/Linux-commands.md",
-    "Linux/Linux.md",
+    "Linux/Module-1/Bash-scripting.md",
+    "Linux/Module-1/README.md",
+    "Linux/Module-1/Linux-commands.md",
+    "README.md",
+    "University-Courses/Semester-9/Digital-Commnication-2/Mimo/README.md",
     "Linux/Bash-scripting.md",
-    "Linux/Environment-variables.md",
-    "bash scripting b7a47a71b7d44daba964b04294207d81/Untitled.png.md"
+    "Linux/README.md",
+    "Linux/Vim-editor.md",
+    "Linux/Package-manager.md",
+    "Linux/Pipelines.md"
   ]
 }
