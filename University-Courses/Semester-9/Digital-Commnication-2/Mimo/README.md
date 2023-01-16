@@ -8,6 +8,7 @@ course:
 - semester-9
 - digital-communication-2
 - module-2
+- simo-mimo-fading-wirless-channel
 
 date: 2023-01-16
 ---
