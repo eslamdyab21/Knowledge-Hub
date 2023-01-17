@@ -37,7 +37,8 @@ date: 2022-06-30
     
     [![](Bash-scripting-images/Untitled%201.png)
     
-
+</br>
+</br>
 
 ### Variables
 
@@ -48,6 +49,9 @@ date: 2022-06-30
 [![](Bash-scripting-images/Untitled%202.png)](Bash-scripting-images/Untitled%202.png)
 
 [![](Bash-scripting-images/Untitled%203.png)](Bash-scripting-images/Untitled%203.png)
+
+</br>
+</br>
 
 ### Conditions
 ```bash
@@ -90,17 +94,26 @@ echo "here are all files inside config dir: $config_files"
 
 [![](Bash-scripting-images/Untitled%206.png)]
 
+</br>
+</br>
+
 ### Numeric compactors
 
 [![](Bash-scripting-images/Untitled%207.png)](Bash-scripting-images/Untitled%207.png)
 
 *   `if [ “$num_files” -eq 10]`
 
+</br>
+</br>
+
 ### String operations
 
 [![](Bash-scripting-images/Untitled%208.png)](Bash-scripting-images/Untitled%208.png)
 
 [![](Bash-scripting-images/Untitled%209.png)](Bash-scripting-images/Untitled%209.png)
+
+</br>
+</br>
 
 ### Passing arguments to a script
 
@@ -141,6 +154,8 @@ echo "here are all files inside config dir: $config_files"
     
     [![](Bash-scripting-images/Untitled%2013.png)](Bash-scripting-images/Untitled%2013.png)
     
+</br>
+</br>
 
 ### Reading user input
 
@@ -148,15 +163,18 @@ echo "here are all files inside config dir: $config_files"
 
 [![](Bash-scripting-images/Untitled%2015.png)](Bash-scripting-images/Untitled%2015.png)
 
+</br>
+</br>
+
 ### Loops
 
 [![](Bash-scripting-images/Untitled%2016.png)](Bash-scripting-images/Untitled%2016.png)
 
 [![](Bash-scripting-images/Untitled%2017.png)](Bash-scripting-images/Untitled%2017.png)
 
-*   loop with if
-    [![](Bash-scripting-images/Untitled%2018.png)](Bash-scripting-images/Untitled%2018.png)
-    ```bash
+* loop with if
+![](Bash-scripting-images/Untitled%2018.png)
+```bash
 #!/bin/bash
 echo "all params: $*"
 echo "number of params: $#"
@@ -173,13 +191,16 @@ do
 done
 ```
     
-    [![](Bash-scripting-images/Untitled%2019.png)](Bash-scripting-images/Untitled%2019.png)
-    
+![](Bash-scripting-images/Untitled%2019.png)
 
-*   while
-    
-    [![](Bash-scripting-images/Untitled%2020.png)](Bash-scripting-images/Untitled%2020.png)
- ```bash
+</br>
+</br>
+
+* while 
+
+![](Bash-scripting-images/Untitled%2020.png)
+
+```bash
 #!/bin/bash
 
 sum=0
@@ -201,7 +222,11 @@ done
 
     
 [![](Bash-scripting-images/Untitled%2021.png)](Bash-scripting-images/Untitled%2021.png)
-    note that in line 17 `sum=$(($sum+$score))` if we typed it like this `sum=$sum+$score` it will concatenate two strings
+
+note that in line 17 `sum=$(($sum+$score))` if we typed it like this `sum=$sum+$score` it will concatenate two strings
+
+</br>
+</br>
 
 ### Functions
 
