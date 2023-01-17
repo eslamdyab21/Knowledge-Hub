@@ -55,13 +55,30 @@ date: 2022-06-30
 
 
 
+[Variables](#Variables)
+
+[Conditions](#Conditions)
+
+[Numeric compactors](#90725ef0-b056-49c9-bbcd-4a1cc42752fe)
+
+[String operations](#b99b9d61-2b57-4696-b700-1a1bd96e7c5e)
+
+[Passing arguments to a script](#25368090-6f2d-4aac-a364-8df251908143)
+
+[Reading user input](#29cb6cd4-a09b-4600-b2de-cf8b39358e51)
+
+[Loops](#2bdd13f6-5cb7-4cec-a63b-7829cc87681d)
+
+[Functions](#6db1a98f-b7a7-4ff3-963f-2a99621f3afa)
+
 *   it’s a way to execute more than one command together. the commands are written in bash files `file.sh` , the first line (shebang #!) must reference the bash location, by default it’s `#!/bin/bash` . to run the bash file: `./file.sh` or `bash file.sh` or `/bin/bash file.sh` 
     
     [![](Bash-scripting-images/Untitled.png)
     
     [![](Bash-scripting-images/Untitled%201.png)
     
-
+</br>
+</br>
 
 ### Variables
 
@@ -72,6 +89,9 @@ date: 2022-06-30
 [![](Bash-scripting-images/Untitled%202.png)](Bash-scripting-images/Untitled%202.png)
 
 [![](Bash-scripting-images/Untitled%203.png)](Bash-scripting-images/Untitled%203.png)
+
+</br>
+</br>
 
 ### Conditions
 ```bash
@@ -114,17 +134,26 @@ echo "here are all files inside config dir: $config_files"
 
 [![](Bash-scripting-images/Untitled%206.png)]
 
+</br>
+</br>
+
 ### Numeric compactors
 
 [![](Bash-scripting-images/Untitled%207.png)](Bash-scripting-images/Untitled%207.png)
 
 *   `if [ “$num_files” -eq 10]`
 
+</br>
+</br>
+
 ### String operations
 
 [![](Bash-scripting-images/Untitled%208.png)](Bash-scripting-images/Untitled%208.png)
 
 [![](Bash-scripting-images/Untitled%209.png)](Bash-scripting-images/Untitled%209.png)
+
+</br>
+</br>
 
 ### Passing arguments to a script
 
@@ -165,6 +194,8 @@ echo "here are all files inside config dir: $config_files"
     
     [![](Bash-scripting-images/Untitled%2013.png)](Bash-scripting-images/Untitled%2013.png)
     
+</br>
+</br>
 
 ### Reading user input
 
@@ -172,15 +203,18 @@ echo "here are all files inside config dir: $config_files"
 
 [![](Bash-scripting-images/Untitled%2015.png)](Bash-scripting-images/Untitled%2015.png)
 
+</br>
+</br>
+
 ### Loops
 
 [![](Bash-scripting-images/Untitled%2016.png)](Bash-scripting-images/Untitled%2016.png)
 
 [![](Bash-scripting-images/Untitled%2017.png)](Bash-scripting-images/Untitled%2017.png)
 
-*   loop with if
-    [![](Bash-scripting-images/Untitled%2018.png)](Bash-scripting-images/Untitled%2018.png)
-    ```bash
+* loop with if
+![](Bash-scripting-images/Untitled%2018.png)
+```bash
 #!/bin/bash
 echo "all params: $*"
 echo "number of params: $#"
@@ -197,13 +231,16 @@ do
 done
 ```
     
-    [![](Bash-scripting-images/Untitled%2019.png)](Bash-scripting-images/Untitled%2019.png)
-    
+![](Bash-scripting-images/Untitled%2019.png)
 
-*   while
-    
-    [![](Bash-scripting-images/Untitled%2020.png)](Bash-scripting-images/Untitled%2020.png)
- ```bash
+</br>
+</br>
+
+* while 
+
+![](Bash-scripting-images/Untitled%2020.png)
+
+```bash
 #!/bin/bash
 
 sum=0
@@ -225,7 +262,11 @@ done
 
     
 [![](Bash-scripting-images/Untitled%2021.png)](Bash-scripting-images/Untitled%2021.png)
-    note that in line 17 `sum=$(($sum+$score))` if we typed it like this `sum=$sum+$score` it will concatenate two strings
+
+note that in line 17 `sum=$(($sum+$score))` if we typed it like this `sum=$sum+$score` it will concatenate two strings
+
+</br>
+</br>
 
 ### Functions
 
@@ -275,6 +316,7 @@ create_file script.sh true
 ```
 
 [![](Bash-scripting-images/Untitled%2025.png)](Bash-scripting-images/Untitled%2025.png)
+
 
 </br>
 </br>
