@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Module-1/README.md",
+                "file": "Linux/Module-1/Bash-scripting.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Module-1/README.md",
+                "file": "Linux/Module-1/Bash-scripting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Module-1/README.md",
+                "file": "Linux/Module-1/Bash-scripting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,6 +154,16 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "f633002a581314a6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Linux/Module-1/Bash-scripting.md"
+              }
+            }
           }
         ],
         "currentTab": 4
@@ -174,8 +184,8 @@
   },
   "active": "6ebe1dcbb2d6a37d",
   "lastOpenFiles": [
-    "Linux/Module-1/Bash-scripting.md",
     "Linux/Module-1/README.md",
+    "Linux/Module-1/Bash-scripting.md",
     "Linux/Module-1/Linux-commands.md",
     "README.md",
     "University-Courses/Semester-9/Digital-Commnication-2/Mimo/README.md",
