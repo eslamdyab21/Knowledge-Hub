@@ -8,7 +8,7 @@ date: 2023-01-16
 ---
 
 
-![](../graph2.png)
+![](University-Courses/Semester-9/Digital-Commnication-2/graph.png)
 
 ## mimo1-fading-siso
 

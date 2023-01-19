@@ -47,16 +47,24 @@
             "id": "746768c5185622c6",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "4750a18cddf54e1b",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "University-Courses/Semester-9/Digital-Commnication-2/Wireless-channel/README.md",
+                "file": "University-Courses/README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -130,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University-Courses/Semester-9/Digital-Commnication-2/Wireless-channel/README.md",
+                "file": "University-Courses/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University-Courses/Semester-9/Digital-Commnication-2/Wireless-channel/README.md",
+                "file": "University-Courses/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,12 +194,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University-Courses/Semester-9/Digital-Commnication-2/Wireless-channel/README.md"
+                "file": "University-Courses/README.md"
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -207,17 +215,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "746768c5185622c6",
+  "active": "4750a18cddf54e1b",
   "lastOpenFiles": [
-    "University-Courses/Semester-9/Digital-Commnication-2/Modulations/README.md",
+    "University-Courses/Semester-9/README.md",
+    "University-Courses/README.md",
+    "University-Courses/graph.png",
     "University-Courses/Semester-9/Digital-Commnication-2/README.md",
+    "University-Courses/Semester-9/Digital-Commnication-2/graph.png",
+    "University-Courses/Semester-9/Digital-Commnication-2/Wireless-channel/README.md",
+    "University-Courses/Semester-9/Digital-Commnication-2/Modulations/README.md",
     "University-Courses/Semester-9/Semester-9.md",
     "University-Courses/Semester-9/Digital-Commnication-2/Modulations/Modulation.md",
-    "University-Courses/Semester-9/Digital-Commnication-2/Wireless-channel/README.md",
-    "University-Courses/Semester-9/Digital-Commnication-2/Wireless-channel/Wireless-channel.md",
-    "University-Courses/Semester-9/Digital-Commnication-2/Wireless-channel/mimo.md",
-    "University-Courses/Semester-9/Digital-Commnication-2/Digital-Commnication-2.md",
-    "University-Courses/Semester-9/Digital-Commnication-2/graph.png",
-    "University-Courses/Semester-9/Digital-Commnication-2/Wireless-channel/simo-sc-mrc-miso.md"
+    "University-Courses/Semester-9/Digital-Commnication-2/Wireless-channel/Wireless-channel.md"
   ]
 }
