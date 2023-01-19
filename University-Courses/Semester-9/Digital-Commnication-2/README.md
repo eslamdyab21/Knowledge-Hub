@@ -8,7 +8,7 @@ tags:
 date: 2023-01-16
 ---
 
-![](University-Courses/Semester-9/Digital-Commnication-2/graph.png)
+![](graph.png)
 
 ### Here are `digitally written pdf` files for different lecture topics in dr.Karem part like:
 - `Signal space` in lec4 and lec5
