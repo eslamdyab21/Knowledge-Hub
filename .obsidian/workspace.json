@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Basics/Linux-commands.md",
+                "file": "Linux/Basics/Environment-variables.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Basics/Linux-commands.md",
+                "file": "Linux/Basics/Environment-variables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Basics/Linux-commands.md",
+                "file": "Linux/Basics/Environment-variables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,12 +194,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Basics/Linux-commands.md"
+                "file": "Linux/Basics/Environment-variables.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -217,13 +217,13 @@
   },
   "active": "ff3f83c514ac652a",
   "lastOpenFiles": [
+    "Linux/Basics/Linux-commands.md",
     "Linux/Basics/Bash-scripting.md",
     "Linux/Basics/Environment-variables.md",
     "Linux/Gstreamer/README.md",
     "Linux/Basics/README.md",
     "Linux/Linux.md",
     "Linux/README.md",
-    "Linux/Basics/Linux-commands.md",
     "Linux/Gstreamer/Gstreamer.md",
     "Linux/Basics/Basics.md",
     "University-Courses/Semester-9/Digital-Commnication-2/Modulations/README.md"
