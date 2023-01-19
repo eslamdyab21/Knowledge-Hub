@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Gstreamer/README.md",
+                "file": "Linux/Basics/Linux-commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Gstreamer/README.md",
+                "file": "Linux/Basics/Linux-commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Gstreamer/README.md",
+                "file": "Linux/Basics/Linux-commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Gstreamer/README.md"
+                "file": "Linux/Basics/Linux-commands.md"
               }
             }
           }
@@ -217,15 +217,15 @@
   },
   "active": "ff3f83c514ac652a",
   "lastOpenFiles": [
+    "Linux/Basics/Bash-scripting.md",
+    "Linux/Basics/Environment-variables.md",
+    "Linux/Gstreamer/README.md",
     "Linux/Basics/README.md",
     "Linux/Linux.md",
-    "Linux/Gstreamer/README.md",
     "Linux/README.md",
     "Linux/Basics/Linux-commands.md",
     "Linux/Gstreamer/Gstreamer.md",
     "Linux/Basics/Basics.md",
-    "University-Courses/Semester-9/Digital-Commnication-2/Modulations/README.md",
-    "University-Courses/Semester-9/Digital-Commnication-2/Modulations/Modulation.md",
-    "Linux/Basics/Vim-editor.md"
+    "University-Courses/Semester-9/Digital-Commnication-2/Modulations/README.md"
   ]
 }

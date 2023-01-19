@@ -16,7 +16,9 @@ date: 2022-06-30
 *   environment variables are a set of dynamic named values, stored within the system that are used by applications launched in shells. In simple words, an environment variable is a variable with a name and an associated value
 
 *   `printenv` print all system env var
-    [![](Linux/Basics/Environment-Variables-images/Untitled.png)Untitled.png)[![](Linux/Basics/Environment-Variables-images/Untitled%201.png)tled%201.png)
+    [![](Linux/Basics/Environment-Variables-images/Untitled.png)Untitled.png)
+    
+    [![](Linux/Basics/Environment-Variables-images/Untitled%201.png)tled%201.png)
     
 
 *   `printenv VAR` print the value of VAR environment variable
