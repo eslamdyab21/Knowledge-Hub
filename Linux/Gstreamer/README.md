@@ -1,3 +1,15 @@
+---
+tags: 
+- linux/gstreamer
+- programming
+
+
+date: 2022-06-30
+---
+
+![](../graph-linux.png)
+
+
 Gstreamer is a pipeline-based multimedia framework that links together a wide variety of media processing systems to complete complex workflows.
 
 ### Installation

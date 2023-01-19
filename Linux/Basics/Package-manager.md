@@ -1,12 +1,9 @@
 ---
 tags: 
-- linux
+- linux/basics
 - programming
 - course/devops
 
-course:
-- devops
-- module1
 
 date: 2022-06-30
 ---
@@ -21,7 +18,7 @@ APT
 *   apt install the program with its dependencies
 
 *   it downloads those packages from the internet from hosted repositories, and those repositories can be found in `/etc/apt/sources.list`
-    [![](Package-manager-images/Untitled.png)](Package-manager-images/Untitled.png)
+    [![](Linux/Basics/Package-manager-images/Untitled.png)Untitled.png)
 
 Snap
 ------------
@@ -43,7 +40,7 @@ PPA Repository
 
 *   after adding the PPA (it will be added to the sources.list) and when installing an app the apt toll will now search in the PPA added repo too to fetch the package from that repo.
 
-[![](Package-manager-images/Untitled%201.png)](Package-manager-images/Untitled%201.png)
+[![](Linux/Basics/Package-manager-images/Untitled%201.png)tled%201.png)
 
 Different source based distributions have different package mangers
 ------------------------------------------------------------------------------------------------------------------------------------------------------

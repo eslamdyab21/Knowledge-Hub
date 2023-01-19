@@ -11,33 +11,17 @@
             "id": "89a6434f54865122",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University-Courses/Semester-9/Digital-Commnication-2/Modulations/Modulation.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
-            "id": "1f7ec9776c72e6c6",
+            "id": "ff3f83c514ac652a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University-Courses/Semester-9/Digital-Commnication-2/Modulations/README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a0c2ff3c83dda8bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University-Courses/Semester-9/Digital-Commnication-2/Modulations/Modulation.md",
+                "file": "Linux/Gstreamer/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,38 +33,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Linux/Gstreamer/README.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4750a18cddf54e1b",
+            "id": "5b9fa81770df49ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Linux/README.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "619be802748bc19d",
+            "id": "ea75fbedc306af6e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University-Courses/README.md",
+                "file": "Linux/Basics/Basics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -154,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Linux/Gstreamer/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Linux/Gstreamer/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Linux/Gstreamer/README.md"
               }
             }
           }
@@ -231,17 +215,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "746768c5185622c6",
+  "active": "ff3f83c514ac652a",
   "lastOpenFiles": [
-    "University-Courses/README.md",
-    "University-Courses/Semester-9/Digital-Commnication-2/Wireless-channel/README.md",
-    "University-Courses/Semester-9/Digital-Commnication-2/README.md",
-    "University-Courses/Semester-9/Digital-Commnication-2/graph.png",
-    "University-Courses/Semester-9/README.md",
-    "README.md",
-    "graph.png",
-    "University-Courses/University-courses.md",
-    "University-Courses/graph.png",
-    "University-Courses/Semester-9/Digital-Commnication-2/Modulations/README.md"
+    "Linux/Basics/README.md",
+    "Linux/Linux.md",
+    "Linux/Gstreamer/README.md",
+    "Linux/README.md",
+    "Linux/Basics/Linux-commands.md",
+    "Linux/Gstreamer/Gstreamer.md",
+    "Linux/Basics/Basics.md",
+    "University-Courses/Semester-9/Digital-Commnication-2/Modulations/README.md",
+    "University-Courses/Semester-9/Digital-Commnication-2/Modulations/Modulation.md",
+    "Linux/Basics/Vim-editor.md"
   ]
 }

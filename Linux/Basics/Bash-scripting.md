@@ -1,12 +1,9 @@
 ---
 tags: 
-- linux
+- linux/basics
 - programming
 - course/devops
 
-course:
-- devops
-- module1
 
 date: 2022-06-30
 ---
@@ -33,9 +30,9 @@ date: 2022-06-30
 
 *   it’s a way to execute more than one command together. the commands are written in bash files `file.sh` , the first line (shebang #!) must reference the bash location, by default it’s `#!/bin/bash` . to run the bash file: `./file.sh` or `bash file.sh` or `/bin/bash file.sh` 
     
-    [![](Bash-scripting-images/Untitled.png)
+    [![](Linux/Basics/Bash-scripting-images/Untitled.png)
     
-    [![](Bash-scripting-images/Untitled%201.png)
+    [![](Linux/Basics/Bash-scripting-images/Untitled%201.png)
     
 </br>
 </br>
@@ -46,9 +43,9 @@ date: 2022-06-30
 
 *   `files = $(ls p0)` save the output of a command to a variable
 
-[![](Bash-scripting-images/Untitled%202.png)](Bash-scripting-images/Untitled%202.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%202.png)tled%202.png)
 
-[![](Bash-scripting-images/Untitled%203.png)](Bash-scripting-images/Untitled%203.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%203.png)tled%203.png)
 
 </br>
 </br>
@@ -86,20 +83,20 @@ echo "here are all files inside config dir: $config_files"
 ```
 
 
-[![](Bash-scripting-images/Untitled%204.png)](Bash-scripting-images/Untitled%204.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%204.png)tled%204.png)
 
-[![](Bash-scripting-images/Untitled%205.png)](Bash-scripting-images/Untitled%205.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%205.png)tled%205.png)
 
 `-d` in if condition is a `file test operator` which checks if a directory exists or not. And there are other test operators:
 
-[![](Bash-scripting-images/Untitled%206.png)]
+[![](Linux/Basics/Bash-scripting-images/Untitled%206.png)]
 
 </br>
 </br>
 
 ### Numeric compactors
 
-[![](Bash-scripting-images/Untitled%207.png)](Bash-scripting-images/Untitled%207.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%207.png)tled%207.png)
 
 *   `if [ “$num_files” -eq 10]`
 
@@ -108,16 +105,16 @@ echo "here are all files inside config dir: $config_files"
 
 ### String operations
 
-[![](Bash-scripting-images/Untitled%208.png)](Bash-scripting-images/Untitled%208.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%208.png)tled%208.png)
 
-[![](Bash-scripting-images/Untitled%209.png)](Bash-scripting-images/Untitled%209.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%209.png)tled%209.png)
 
 </br>
 </br>
 
 ### Passing arguments to a script
 
-[![](Bash-scripting-images/Untitled%2010.png)](Bash-scripting-images/Untitled%2010.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%2010.png)led%2010.png)
 
 ```bash
     #!/bin/bash
@@ -146,34 +143,34 @@ echo "here are all files inside config dir: $config_files"
     echo "here are all files inside config dir: $config_files"
 ```
 
-[![](Bash-scripting-images/Untitled%2011.png)](Bash-scripting-images/Untitled%2011.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%2011.png)led%2011.png)
 
 *   there are two special parameters which allow us to store all the user input parameters `$*`, and their number `$#`
     
-    [![](Bash-scripting-images/Untitled%2012.png)](Bash-scripting-images/Untitled%2012.png)
+    [![](Linux/Basics/Bash-scripting-images/Untitled%2012.png)led%2012.png)
     
-    [![](Bash-scripting-images/Untitled%2013.png)](Bash-scripting-images/Untitled%2013.png)
+    [![](Linux/Basics/Bash-scripting-images/Untitled%2013.png)led%2013.png)
     
 </br>
 </br>
 
 ### Reading user input
 
-[![](Bash-scripting-images/Untitled%2014.png)](Bash-scripting-images/Untitled%2014.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%2014.png)led%2014.png)
 
-[![](Bash-scripting-images/Untitled%2015.png)](Bash-scripting-images/Untitled%2015.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%2015.png)led%2015.png)
 
 </br>
 </br>
 
 ### Loops
 
-[![](Bash-scripting-images/Untitled%2016.png)](Bash-scripting-images/Untitled%2016.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%2016.png)led%2016.png)
 
-[![](Bash-scripting-images/Untitled%2017.png)](Bash-scripting-images/Untitled%2017.png)
+[![](Linux/Basics/Bash-scripting-images/Untitled%2017.png)led%2017.png)
 
 * loop with if
-![](Bash-scripting-images/Untitled%2018.png)
+![](Linux/Basics/Bash-scripting-images/Untitled%2018.png)
 ```bash
 #!/bin/bash
 echo "all params: $*"
@@ -191,14 +188,14 @@ do
 done
 ```
     
-![](Bash-scripting-images/Untitled%2019.png)
+![](Untitled%2019.png)
 
 </br>
 </br>
 
 * while 
 
-![](Bash-scripting-images/Untitled%2020.png)
+![](Untitled%2020.png)
 
 ```bash
 #!/bin/bash
@@ -221,26 +218,14 @@ done
 ```
 
     
-[![](Bash-scripting-images/Untitled%2021.png)](Bash-scripting-images/Untitled%2021.png)
-
-note that in line 17 `sum=$(($sum+$score))` if we typed it like this `sum=$sum+$score` it will concatenate two strings
+[![](Untitled%2021.png) `sum=$(($sum+$score))` if we typed it like this `sum=$sum+$score` it will concatenate two strings
 
 </br>
 </br>
 
 ### Functions
 
-[![](Bash-scripting-images/Untitled%2022.png)](Bash-scripting-images/Untitled%2022.png)
-
-[![](Bash-scripting-images/Untitled%2023.png)](Bash-scripting-images/Untitled%2023.png)
-
-ex2
-
-[![](Bash-scripting-images/Untitled%2024.png)](Bash-scripting-images/Untitled%2024.png)
-
-```bash
-#!/bin/bash
-
+[![](Untitled%2022.png)ng)024.png)
 function sum(){
    total=$(($1+$2))
    return $total
@@ -275,4 +260,4 @@ create_file con.yaml
 create_file script.sh true
 ```
 
-[![](Bash-scripting-images/Untitled%2025.png)](Bash-scripting-images/Untitled%2025.png)
+[![](Untitled%2025.png)

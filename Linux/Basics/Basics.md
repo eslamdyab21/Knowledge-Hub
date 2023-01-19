@@ -6,18 +6,4 @@
 [[Package-manager]]
 [[Pipelines]]
 [[Vim-editor]]
-
-
-
-
-
-```dataview
-list
-from #course 
-where contains(course, "module1")
-```
-
-
-
-
-
+[[Linux/Basics/README]]
