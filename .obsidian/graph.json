@@ -1,22 +1,37 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
-  "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Linux",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "tag:#uni/semester-9",
+      "color": {
+        "a": 1,
+        "rgb": 10580417
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "lineSizeMultiplier": 1.26119791666667,
   "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 1.2696914091039395,
+  "centerStrength": 0.408854166666667,
+  "repelStrength": 10.0520833333333,
+  "linkStrength": 0.5546875,
+  "linkDistance": 252,
+  "scale": 0.9476934927431857,
   "close": true
 }

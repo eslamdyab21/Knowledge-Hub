@@ -1,16 +1,14 @@
 ---
 tags:
 - Eng
-- course/uni/digital-communication-2
+- uni/semester-9
+- course/uni/digital-communication-2/modulation
 
-course:
-- uni
-- semester-9
-- digital-communication-2
-- modulations-qam-psk-ask-mimo-wirless
 
 date: 2023-01-16
 ---
+
+![](graph2.png)
 
 ### Here are `digitally written pdf` files for different lecture topics in dr.Karem part like:
 - `Signal space` in lec4 and lec5
