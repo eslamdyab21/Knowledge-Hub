@@ -1,0 +1,114 @@
+
+Change keyboard layout in awsome:
+------------------------------------------------------------------------
+localectl list-x11-keymap-layouts  //avalible layouts
+setxkbmap ara                      //change keyoard layout to us english
+setxkbmap us                       //change keyoard layout to ara arabic
+
+
+Run vm in virt-manager:
+------------------------------------------------------------------------
+virt-viewer --connect=qemu:///system --domain-name win10
+
+
+Disable virbr0 virtual network:
+------------------------------------------------------------------------
+sudo ifconfig virbr0 down
+
+
+uncommit a commit in githb:
+----------------------------------------------------------------------
+git reset --soft HEAD^
+
+
+
+remove files from git to ignore in .girignore:
+--------------------------------------------------------------------------
+git rm --cached Graduation\ Project\ Documentation/.obsidian/*
+
+
+
+
+extract pdf pages as seprate  png images
+--------------------------------------------------------------------------
+pdftoppm mimo2-simo-sc-mrc-miso.pdf outputname -png -rx 170 -ry 170
+
+
+
+get class name of any program
+--------------------------------------------------------------------------
+xprop
+
+
+
+nitogen for handling wallpapers for different monitors
+--------------------------------------------------------------------------
+nitrogen ~/Pictures/Wallpapers/
+nitrogen --restore
+
+
+Rotate a video in ffmpeg
+--------------------------------------------------------------------------
+ffmpeg -i qr.mp4 -vf transpose=cclock qr_camera_test.mp4
+
+transpose param:
+	‘cclock_flip’
+             Rotate by 90 degrees counterclockwise and vertically flip. (default)
+	‘clock’
+             Rotate by 90 degrees clockwise.
+	‘cclock’
+             Rotate by 90 degrees counterclockwise.
+	‘clock_flip’
+             Rotate by 90 degrees clockwise and vertically flip. 
+
+
+
+
+Screen recording
+---------------------------------------------------------------------------
+sudo apt install peek (for gif)
+sudo apt install kazam (for videos)
+
+
+Logout
+---------------------------------------------------------------------------
+sudo pkill -u username
+
+
+Battery save
+---------------------------------------------------------------------------
+sudo snap install auto-cpufreq
+
+
+Anotate on screen
+---------------------------------------------------------------------------
+~/Documents/Pensela/build/./Pensela-1.2.5.AppImage
+./Pensela.sh  (will close old instance and open new one in current window)
+super+p (awsome)
+
+// Key bindings
+const mouse_mode_key_biding = 'Command+S'
+const draw_mode_key_biding = 'Command+A'
+const undo_mode_key_biding = 'Command+D'
+const format_mode_key_biding = 'Command+F'
+const strok_up_mode_key_biding = 'Command+UP'
+const strok_down_mode_key_biding = 'Command+DOWN'
+const close_mode_key_biding = 'Alt+P'
+const toggle_vis_mode_key_biding = 'Alt+R'
+const move_win_up_mode_key_biding = 'Alt+UP'
+const move_win_down_mode_key_biding = 'Alt+DOWN'
+
+
+
+Handle multiple screen with randr
+----------------------------------------------------------
+xrandr --current (git info about connected screens)
+xrandr --output <projector> --same-as <desktop>
+xrandr --output HDMI-1 --same-as eDP-1 (duplicate screen)
+xrandr --output HDMI-1 --right-of eDP-1 (split - external is to the right to primary)
+xrandr --output HDMI-1 --auto (auto assign)
+
+
+Unrar a file.rar
+----------------------------------------------------------
+unrar e file.rar
