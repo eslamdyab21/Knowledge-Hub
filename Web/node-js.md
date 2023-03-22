@@ -1,9 +1,4 @@
 ---
-tags: 
-- web/node-js
-- programming
-- course/node-js-Crash-Course
-
 date: 2023-01-30
 ---
 
@@ -383,3 +378,212 @@ file renamed
 newname.txt
 ```
 
+
+
+### OS
+```javascript
+// importing os module
+const os = require('os');
+  
+
+// Platform
+console.log('Platform:')
+console.log( + os.platform() + '\n');
+
+// CPU Arch
+console.log('CPU Arch:')
+console.log(os.arch() + '\n');
+  
+// CPU Core Info
+console.log('CPU Core Info:')
+console.log(os.cpus() + '\n');
+
+  
+// Free memory
+console.log('Free memory:')
+console.log(os.freemem() + '\n');
+
+// Total memory
+console.log('Total memory:')
+console.log(os.totalmem() + '\n');
+
+// Home dir
+console.log('Home dir:')
+console.log(os.homedir() + '\n');
+
+
+// Uptime
+console.log('Uptime:')
+console.log(os.uptime() + '\n');
+```
+
+```bash
+❯ node index.js 
+Platform:
+linux
+
+CPU Arch:
+x64
+
+CPU Core Info:
+[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+Free memory:
+12956491776
+
+Total memory:
+16669773824
+
+Home dir:
+/home/dyab
+
+Uptime:
+2674.5
+```
+
+
+### URL
+```javascript
+const url = require('url')
+const myUrl = new URL('http://mywebsite.com/hello.html?id=100&status=active')
+
+
+// Serialized URL
+console.log('Serialized URL:')
+console.log(myUrl.href);
+console.log(myUrl.toString() + '\n');
+
+// Host (root domain)
+console.log('Host (root domain):')
+console.log(myUrl.host + '\n');
+
+// Hostname (does not get port)
+console.log('Hostname (does not get port):')
+console.log(myUrl.hostname + '\n');
+
+// Pathname
+console.log('Pathname:')
+console.log(myUrl.pathname + '\n');
+
+// Serialized query
+console.log('Serialized query:')
+console.log(myUrl.search + '\n');
+
+// Params object
+console.log('Params object:')
+console.log(myUrl.searchParams + '\n');
+
+// Add param
+console.log('Add param:')
+myUrl.searchParams.append('abc', '123');
+console.log(myUrl.searchParams + '\n');
+
+// Loop through params
+console.log('Loop through params:')
+console.log(myUrl.searchParams)
+myUrl.searchParams.forEach((value, name) => console.log(`${name}: ${value}`) + '\n');
+```
+
+```bash
+❯ node index.js 
+Serialized URL:
+http://mywebsite.com/hello.html?id=100&status=active
+http://mywebsite.com/hello.html?id=100&status=active
+
+Host (root domain):
+mywebsite.com
+
+Hostname (does not get port):
+mywebsite.com
+
+Pathname:
+/hello.html
+
+Serialized query:
+?id=100&status=active
+
+Params object:
+id=100&status=active
+
+Add param:
+id=100&status=active&abc=123
+
+Loop through params:
+URLSearchParams { 'id' => '100', 'status' => 'active', 'abc' => '123' }
+id: 100
+status: active
+abc: 123
+```
+
+
+### Events
+```javascript
+// Create class
+class MyEmitter extends EventEmitter {}
+
+// Init object
+const myEmitter = new MyEmitter();
+// Event listener
+myEmitter.on('event', () => console.log('Event Fired!'));
+
+// Init event
+myEmitter.emit('event');
+myEmitter.emit('event');
+myEmitter.emit('event');
+myEmitter.emit('event');
+```
+
+```bash
+❯ node index.js 
+Event Fired!
+Event Fired!
+Event Fired!
+Event Fired!
+```
+
+
+- Events with class 
+`Logger.js` class 👇
+```javascript
+// import events and uuid modules 
+const EventEmitter = require('events')
+const uuid = require('uuid') //gives 
+
+  
+class Logger extends EventEmitter{
+	log(msg){
+		// call event
+		this.emit('message', {id:uuid.v4(), msg:msg})
+	}
+}
+
+module.exports = Logger
+```
+
+`index.js` 👇
+```javascript
+// import Logger class
+
+const Logger = require('./Logger')
+
+// create instant of Logger class
+const logger1 = new Logger
+
+logger1.on('message', data => console.log('Called Listner', data))
+
+// call log method in Logger class
+logger1.log('Hello world')
+logger1.log('Hi')
+logger1.log('World')
+```
+
+```bash
+❯ node index.js 
+Called Listner { id: 'b7b7737b-ff94-4e42-bf34-31b0fc71cf3c', msg: 'Hello world' }
+Called Listner { id: 'adcd0e2d-9d40-4d36-a387-228f18b808ea', msg: 'Hi' }
+Called Listner { id: '5e393da8-dd10-4930-89b2-e7a1e4ad3e11', msg: 'World' }
+```
+
+
+
+### HTTP Minimal web server

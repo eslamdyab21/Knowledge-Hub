@@ -1,10 +1,4 @@
 ---
-tags:
-- Eng
-- uni/semester-9
-- course/uni/digital-communication-2
-
-
 date: 2023-01-19
 ---
 

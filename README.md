@@ -1,3 +1,7 @@
+---
+{}
+---
+
 # Knowledge-Hub
 
 ![](graph.png)
