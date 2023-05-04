@@ -24,6 +24,7 @@ Server:
 ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/info": dial unix /var/run/docker.sock: connect: permission denied
 errors pretty printing info
 ```
+
 The client provides us the controls like the CLI, and the server runs the background services needed for docker.
 As you can see `ERROR: permission denied` in the server, it needs `sudo`, but in order to user docker without having to type sudo every time we can add the docker group to our user group 
 ```bash
@@ -125,4 +126,12 @@ c926a2ad9172   python:3.8        "/bin/bash"              12 minutes ago   Exite
 	fb44d4a823fb   python:3.8        "/bin/bash"              About a minute ago   Exited (0) 9 seconds ago             inspiring_taussig
 	c926a2ad9172   python:3.8        "/bin/bash"              19 minutes ago       Exited (0) 7 minutes ago             naughty_ramanujan
    ```
-   
+
+- Delete a container 
+  ```python
+  ❯ docker container rm fb44d4a823fb
+
+  ❯ docker container ls -a
+  	CONTAINER ID   IMAGE             COMMAND                  CREATED              STATUS                     PORTS     NAMES
+	c926a2ad9172   python:3.8        "/bin/bash"              19 minutes ago       Exited (0) 7 minutes ago             naughty_ramanujan
+   ```
