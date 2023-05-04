@@ -67,12 +67,3 @@ date: 2022-06-30
 
 *   `lsmem` list memory info
     [![](Linux-commands-images/Untitled%2012.png)](Linux-commands-images/Untitled%2012.png)
-
-*   `sudo addusr name` add a user (needs to run as root)
-    [![](Linux-commands-images/Untitled%2013.png)](Linux-commands-images/Untitled%2013.png)
-
-*   `su - name` switch user
-    [![](Linux-commands-images/Untitled%2014.png)](Linux-commands-images/Untitled%2014.png)
-
-*   `sudo addgroup name` add a group
-    [![](Linux-commands-images/Untitled%2015.png)](Linux-commands-images/Untitled%2015.png)
