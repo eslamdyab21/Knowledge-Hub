@@ -19,7 +19,7 @@ f6dfe4e246af   jenkins/jenkins:lts   "/usr/bin/tini -- /u…"   7 minutes ago   
 ```
 We can now access Jenkins through `localhost:8080`
 
-![[images/jenkins-portal.png]]
+![](images/jenkins-portal.png)
 
 
 We can find the password in the shown path (inside the container), note that this path `/var/jenkins_home` is what we set when during the installation.
@@ -61,15 +61,16 @@ Now we can proceed with the user setup in jenkins ui.
 </br>
 
 ### Setup a multi-branch pipeline 
-![[images/jenkins-multi-branch-pipeline.png]]
+![](images/jenkins-multi-branch-pipeline.png)
 
 We will need to add our git-hub account credentials (username and token) then the repository link
-![[images/jenkins-github-repo-info.png]]
+![](images/jenkins-github-repo-info.png)
 After that jenkins will start to scan the repo and its branches to fine any jenkins files to run its pipelines.
 
-![[jenkins-project.png]]
+![](images/jenkins-project.png)
 
-![[jenkins-branch-pipeline.png]]
+![](images/jenkins-branch-pipeline.png)
+![](images/jenkins-pipeline-running.png)
 
 </br>
 </br>
@@ -81,7 +82,7 @@ After that jenkins will start to scan the repo and its branches to fine any jenk
 To install packages like `nodejs` navigate to `Dashboard - Manage Jenkins - Plugins - Avalible plugins`
 Then go to `tools` we will find `Nodejs` at the button, click on it and choose the version you want than save. It will get downloaded and installed automatically when first using it inside a pipeline.
 
-![[images/jenkins-nodejs.png]]
+![](images/jenkins-nodejs.png)
 
 
 
