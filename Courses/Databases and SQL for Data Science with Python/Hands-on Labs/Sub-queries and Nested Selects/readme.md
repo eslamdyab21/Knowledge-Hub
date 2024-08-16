@@ -84,6 +84,7 @@ mysql> SELECT AVG(SALARY) FROM (SELECT SALARY FROM EMPLOYEES ORDER BY SALARY DES
 
 <br/>
 <br/>
+
 # Practice Problems
 Write a query to find the average salary of the five least-earning employees.
 ```SQL
