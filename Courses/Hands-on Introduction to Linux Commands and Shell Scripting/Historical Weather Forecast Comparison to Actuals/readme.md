@@ -17,6 +17,7 @@ echo 'year\tmonth\tday\thour\tobs_tmp\tfc_temp' > rx_poc.log
 
 <br/>
 <br/>
+
 # Exercise 2 - Write a bash script that downloads the raw weather data, and extracts and loads the required data
 
 ### 2.1. Create a text file called `rx_poc.sh` and make it a bash script
@@ -42,6 +43,7 @@ touch weather_report
 ```
 
 <br/>
+
 ##### 2.2.2 Download the wttr.in weather report for Casablanca and save it with the filename you created
 
 ```bash
@@ -58,6 +60,7 @@ cat raw_data_20240823
 ```
 
 <br/>
+
 ##### 2.3.1. Extract the current temperature, and store it in a shell variable called `obs_tmp`
 
 ```bash
@@ -67,6 +70,7 @@ fc_tmp=$(head -1 raw_data_20240823 | rev | cut -d "," -f 2 | rev | cut -d ":" -f
 
 <br/>
 <br/>
+
 ### 2.4. Store the current hour, day, month, and year in corresponding shell variables
 
 ```bash
@@ -110,7 +114,7 @@ year\tmonth\tday\thour\tobs_tmp\tfc_temp
 # │ │ │ │ │
 # * * * * *  command_to_execute
 
-0 0 * * * /home/Documents/Projects/ibm-data-eng/Historical-Weather-Forecast-Comparison-to-Actuals/rx_poc.sh
+0 0 * * * /home/dev/Documents/Projects/ibm-data-eng/Historical-Weather-Forecast-Comparison-to-Actuals/rx_poc.sh
 ```
 
 in order for the job to work i had to add the full path in the bash script.
