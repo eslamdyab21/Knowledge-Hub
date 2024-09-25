@@ -1,29 +1,34 @@
 ### Let's imagine we work at an online Music Store. There will be many tables in our database but let's just focus on 4 tables around customer purchases.
 
 
-> [!Table Name: customer_transactions]
+> [Table Name: customer_transactions]
 > column: Customer Id
 > column: Store Id
 > column: Spent
 
 
-> [!Table Name: Customer]
+> [Table Name: Customer]
 > column: Customer Id
 > column: Name
 > column: Rewards
 
 
-> [!Table Name: store]
+> [Table Name: store]
 > column: Store Id
 > column: State
 
 
-> [!Table Name: items_purchased]
+> [Table Name: items_purchased]
 > column: customer id
 > column: Item Name
 
+<br/>
+<br/>
+
 From this representation we can already start to see the makings of a "STAR". We have one fact table (the center of the star) and 3 dimension tables that are coming from it.
 
+<br/>
+<br/>
 
 ### Create the Fact Table and insert the data into the table
 ```sql
@@ -32,6 +37,8 @@ CREATE TABLE IF NOT EXISTS customer_transactions (customer_id int, store_id int,
 postgres=# INSERT INTO customer_transactions VALUES (1, 1, 20.50), (2, 1, 35.21);
 ```
 
+<br/>
+<br/>
 
 ### Create our Dimension Tables and insert data into those tables.
 ```SQL
@@ -49,6 +56,8 @@ postgres=# INSERT INTO store VALUES (1, 'CA'), (2, 'WA');
 postgres=# INSERT INTO customer VALUES (1, 'Amanda', True), (2, 'Toby', False);
 ```
 
+<br/>
+<br/>
 
 ```SQL
 postgres=# SELECT * FROM customer;
@@ -79,6 +88,9 @@ postgres=# SELECT * FROM items_purchased;
            2 |           3 | Let It Be
 (2 rows)
 ```
+
+<br/>
+<br/>
 
 ### Now run the following queries on this data that utilize the Fact/Dimension and Star Schema
   

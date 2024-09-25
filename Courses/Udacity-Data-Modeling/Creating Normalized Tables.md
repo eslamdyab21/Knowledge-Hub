@@ -15,6 +15,8 @@ postgres=# SELECT * FROM music_store;
 (3 rows)
 ```
 
+<br/>
+<br/>
 
 ### Moving to 1st Normal Form (1NF)
 
@@ -42,6 +44,9 @@ INSERT 0 1
 postgres=# 
 ```
 
+<br/>
+<br/>
+
 ```sql
 postgres=# SELECT * FROM music_store2;
  transaction_id | customer_name | cashier_name | year | albums_purchased 
@@ -54,22 +59,28 @@ postgres=# SELECT * FROM music_store2;
 (5 rows)
 ```
 
+<br/>
+<br/>
+
 ### Moving to 2nd Normal Form (2NF)
 
 We have moved our data to be in 1NF which is the first step in moving to 2nd Normal Form. Our table is not yet in 2nd Normal Form. While each of our records in our table is unique, our Primary key (transaction id) is not unique. We need to break this up into two tables, transactions and albums sold.
 
 
-> [!Table Name: transactions]
+> [Table Name: transactions]
 > column 0: Transaction ID
 > column 1: Customer Name
 > column 2: Cashier Name
 > column 3: Year 
 
 
-> [!Table Name: albums_sold]
+> [Table Name: albums_sold]
 > column 0: Album Id
 > column 1: Transaction Id
 > column 3: Album Name
+
+<br/>
+<br/>
 
 ```sql
 postgres=# CREATE TABLE transactions (transaction_id int, customer_name varchar, cashier_name varchar, year int);
@@ -102,6 +113,9 @@ postgres=# SELECT * FROM albums_sold;
 (5 rows)
 ```
 
+<br/>
+<br/>
+
 #### Let's do a `JOIN` on this table so we can get all the information we had in our first Table.
 
 ```sql
@@ -117,26 +131,28 @@ postgres=# SELECT * FROM transactions JOIN albums_sold ON transactions.transacti
 (5 rows)
 ```
 
+<br/>
+<br/>
 
 ### Moving to 3rd Normal Form (3NF)
 
 Let's check our table for any transitive dependencies. Transactions can remove Cashier Name to its own table, called Employees, which will leave us with 3 tables.
 
 
-> [!Table Name: transactions2]
+> [Table Name: transactions2]
 > column 0: transaction Id
 > column 1: Customer Name
 > column 2: Cashier Id
 > column 3: Year 
 
 
-> [!Table Name: albums_sold]
+> [Table Name: albums_sold]
 > column 0: Album Id
 > column 1: Transaction Id
 > column 3: Album Name
 
 
-> [!Table Name: employees]
+> [Table Name: employees]
 > column 0: Employee Id
 > column 1: Employee Name 
 
