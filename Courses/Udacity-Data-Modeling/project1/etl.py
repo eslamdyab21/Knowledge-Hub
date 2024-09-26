@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import numpy as np
 from db_utils import *
 
 
@@ -40,14 +41,36 @@ def load_artists_table(song_files, connection, cursor):
     print("load_artists_table")
 
 
-song_files = get_files('data/song_data')
+def load_users_table(log_files, connection, cursor):
+    for file in log_files:
+        df = pd.read_json(file, lines=True)
+        df = df [['userId', 'firstName', 'lastName', 'gender', 'level']]
+        df.drop_duplicates(subset=['userId'], inplace=True)
+        df = df[df['userId'].notna()]
+        df = df[df['userId'] != '']
+        users_insert_data = df.values.tolist()
 
-connection, cursor = db_connect()
-drop_tables(connection, cursor)
-create_schema(connection, cursor)
+        cursor.executemany(user_table_insert, users_insert_data)
+        connection.commit()
 
-load_artists_table(song_files, connection, cursor)
-load_songs_table(song_files, connection, cursor)
+    print("load_users_table")
 
-connection.close()
-cursor.close()
+
+
+def main():
+    song_files = get_files('data/song_data')
+    log_files = get_files('data/log_data')
+
+    connection, cursor = db_connect()
+    drop_tables(connection, cursor)
+    create_schema(connection, cursor)
+
+    load_artists_table(song_files, connection, cursor)
+    load_songs_table(song_files, connection, cursor)
+    load_users_table(log_files, connection, cursor)
+
+    connection.close()
+    cursor.close()
+
+
+main()
