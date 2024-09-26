@@ -111,8 +111,38 @@ artists
 
 <br/>
 <br/>
+
 ## Test run
 ---
+```bash
+[dyab@localhost project1]$ python3 etl.py 
+get_files
+get_files
+drop_tables
+create_schema
+load_artists_table
+load_songs_table
+load_users_table
+load_songplays_table
+```
+
+<br/>
+
+```sql
+sparkify=# \dt
+           List of relations
+ Schema |   Name    | Type  |  Owner   
+--------+-----------+-------+----------
+ public | artists   | table | postgres
+ public | songplays | table | postgres
+ public | songs     | table | postgres
+ public | users     | table | postgres
+(4 rows)
+
+sparkify=#
+```
+
+<br/>
 
 - artists table
 ![](images/artists_tale.png)
