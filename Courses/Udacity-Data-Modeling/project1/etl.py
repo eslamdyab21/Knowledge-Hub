@@ -1,23 +1,6 @@
 import os
 import pandas as pd
-import psycopg2
-from dotenv import load_dotenv
-
-
-def db_connect():
-    load_dotenv()
-    
-    connection = psycopg2.connect(
-        host=os.getenv('DATABASE_HOST'),
-        port=os.getenv('DATABASE_PORT'),
-        user=os.getenv('DATABASE_USER'),
-        password=os.getenv('DATABASE_PASSWORD'),
-        dbname=os.getenv('DATABASE_NAME'),
-    )
-    cursor = connection.cursor()
-
-
-    return cursor
+from db_utils import *
 
 
 def get_files(filepath):
@@ -28,25 +11,43 @@ def get_files(filepath):
                 file = os.path.join(root, file)
                 all_files.append(file)
     
+    print("get_files")
     return all_files
 
 
-def load_songs_tale(song_files, cursor):
+
+def load_songs_table(song_files, connection, cursor):
     for file in song_files:
         df = pd.read_json(file, lines=True)
         df = df[['song_id', 'title', 'artist_id', 'year', 'duration']]
         song_insert_data = df.values[0].tolist()
 
-        song_table_insert = ("""
-            INSERT INTO songs (song_id, title, artist_id, year, duration)
-            VALUES (%s, %s, %s, %s, %s);
-            """)
-
         cursor.execute(song_table_insert, song_insert_data)
-        cursor.commit()
+        connection.commit()
+
+    print("load_songs_table")
 
 
+def load_artists_table(song_files, connection, cursor):
+    for file in song_files:
+        df = pd.read_json(file, lines=True)
+        df = df[['artist_id', 'artist_name', 'artist_location', 'artist_latitude', 'artist_longitude']]
+        artist_insert_data = df.values[0].tolist()
 
-cursor = db_connect()
+        cursor.execute(artist_table_insert, artist_insert_data)
+        connection.commit()
+
+    print("load_artists_table")
+
+
 song_files = get_files('data/song_data')
-load_songs_tale(song_files, cursor)
+
+connection, cursor = db_connect()
+drop_tables(connection, cursor)
+create_schema(connection, cursor)
+
+load_artists_table(song_files, connection, cursor)
+load_songs_table(song_files, connection, cursor)
+
+connection.close()
+cursor.close()

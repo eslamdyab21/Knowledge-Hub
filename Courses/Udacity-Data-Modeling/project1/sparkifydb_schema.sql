@@ -1,7 +1,3 @@
-CREATE DATABASE sparkify;
-
-\connect sparkify
-
 CREATE TABLE IF NOT EXISTS users(
     user_id INTEGER,
     first_name VARCHAR(50),
