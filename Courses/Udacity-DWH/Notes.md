@@ -20,9 +20,7 @@ Data Warehouse is a system including processes, technologies and data representa
 
 ## Data Warehouse:
 - Definition 1 -> a copy of transaction data specifically structured for query and analysis.
-<br/>
 - Definition 2 -> a subject-orientated, integrated, nonvolatile and time variant collection of data in support of management decisions.
-<br/>
 - Definition 3 -> a system that retrieves and consolidate data periodically from the source system into a dimensional or normalized data store (ETL), it usually keeps years of history and is queried for business inelegance or other analytical activities. It is typically updated in batches, not every time a transaction happens in the source system.
 
 <br/>
@@ -62,7 +60,9 @@ DWH Goals:
 Facts tables:
 - record business events, like an order, a phone call, a book review
 - fact tales columns record events recorded in quantifiable metrics like quantity of an item, duration of a call, a book rating.
+
 <br/>
+
 - Facts are usually numeric and additive.
 - a comment on an article represents an event, but it's not a good fact
 - invoice number is numeric but adding it doesn't make scene, not a good fact
@@ -73,7 +73,19 @@ Facts tables:
 Dimension tables:
 - record the context of a business event, (who, what, where, why, ....)
 - Dimension tables columns contain attributes like the store at wish an item was purchased, or the customer who made the call.
+
 <br/>
+
 - Date and Time are always a dims
 - Physical locations and their attributes are good dims
 - Human roles like customer and staff are good dims
+
+<br/>
+
+![](images/3nf2star.png)
+We go from 3NF to Star with ETL
+- query the 3NF DB (Extract)
+- join tables together (Transform)
+- change types (Transform)
+- add new columns (Transform)
+- inserting into facts and dimension tables (Load)
