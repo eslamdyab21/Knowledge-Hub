@@ -51,10 +51,6 @@ The technologies used in the source databases and in the dimensional model in th
 - Easy to understand 
 - Fast analytical query performance
 
--> **Star schema**: joins with dimensions only, good for OLAP not OLTP
-
--> **3NF schema**: lots of expensive joins, hard to explain to businesses users.
-
 <br/>
 
 ### Facts and Dimensions
@@ -111,6 +107,14 @@ it depends on how slow or how rapidly it changes, but generally there are 3 ways
 <br/>
 
 ![](images/3nf2star.png)
+
+
+-> **Star schema**: joins with dimensions only, good for OLAP not OLTP
+
+-> **3NF schema**: lots of expensive joins, hard to explain to businesses users.
+
+<br/>
+
 We go from 3NF to Star with ETL
 - query the 3NF DB (Extract)
 - join tables together (Transform)
