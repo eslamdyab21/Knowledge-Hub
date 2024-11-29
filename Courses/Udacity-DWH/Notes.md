@@ -25,7 +25,7 @@ Data Warehouse is a system including processes, technologies and data representa
 
 <br/>
 
-The flow:
+#### The flow:
 ![](images/etl.png)
 
 ![](images/dim.png)
@@ -52,17 +52,15 @@ The technologies used in the source databases and in the dimensional model in th
 - Fast analytical query performance
 
 -> **Star schema**: joins with dimensions only, good for OLAP not OLTP
+
 -> **3NF schema**: lots of expensive joins, hard to explain to businesses users.
 
 <br/>
 
 ### Facts and Dimensions
-#### Facts tables:
+### Facts tables:
 - record business events, like an order, a phone call, a book review
 - fact tales columns record events recorded in quantifiable metrics like quantity of an item, duration of a call, a book rating.
-
-<br/>
-
 - Facts are usually numeric and additive.
 - a comment on an article represents an event, but it's not a good fact
 - invoice number is numeric but adding it doesn't make scene, not a good fact
@@ -70,24 +68,22 @@ The technologies used in the source databases and in the dimensional model in th
 
 <br/>
 
-#### Dimension tables:
+### Dimension tables:
 - record the context of a business event, (who, what, where, why, ....)
 - Dimension tables columns contain attributes like the store at wish an item was purchased, or the customer who made the call.
-
-<br/>
-
 - Date and Time are always a dims
 - Physical locations and their attributes are good dims
 - Human roles like customer and staff are good dims
 
 
 
-#### Dimensions comes in two flavors:
+### Dimensions comes in two flavors:
 - **Slowly-changing** -> it changes with time like your favorite food, or the price of an item, age, current country 
 - **Fixed** -> it doesn't change with time like the birth date, or the phone manufacture (easier)
 
+<br/>
 
-#### How can you model dimensions that change?
+### How can you model dimensions that change?
 it depends on how slow or how rapidly it changes, but generally there are 3 ways
 - **Singular snapshot** -> only takes the last snapshot of the data, it neglects all past records of a dimension, all the dimensional values of the old data would pull in the latest value which might not e correct for the older data, for the most part just never do this
 
