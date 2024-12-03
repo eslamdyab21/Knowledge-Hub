@@ -124,3 +124,25 @@ pagila=# \dt
  public | store            | table | postgres
 (21 rows)
 ```
+
+<br/>
+<br/>
+# env file to connect to postgres db from notebook
+
+```
+DATABASE_HOST=172.17.0.3
+DATABASE_PORT=5432
+DATABASE_USER="postgres"
+DATABASE_PASSWORD="password"
+DATABASE_NAME="pagila"
+```
+
+<br/>
+
+where `172.17.0.3` is the ip of the `postgres` docker container 
+```bash
+dyab:3NF-2-Star/$ docker inspect postgres | grep IPAddress
+            "SecondaryIPAddresses": null,
+            "IPAddress": "172.17.0.3",
+                    "IPAddress": "172.17.0.3",
+```
