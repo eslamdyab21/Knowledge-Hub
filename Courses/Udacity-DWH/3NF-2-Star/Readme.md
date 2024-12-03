@@ -127,6 +127,7 @@ pagila=# \dt
 
 <br/>
 <br/>
+
 # env file to connect to postgres db from notebook
 
 ```
