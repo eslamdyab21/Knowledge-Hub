@@ -172,3 +172,4 @@ dyab:3NF-2-Star/$ docker inspect postgres | grep IPAddress
 
 
 # Now we can start to work on the database in the `3nf2star` and `cube` notebooks. 
+
