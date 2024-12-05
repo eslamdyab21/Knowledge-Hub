@@ -121,3 +121,55 @@ We go from 3NF to Star with ETL
 - change types (Transform)
 - add new columns (Transform)
 - inserting into facts and dimension tables (Load)
+
+
+<br/>
+<br/>
+
+# DWH Architectures
+Over the years engineers have tried to build dwh differently optimizing for different factors, here are some of the most famous:
+- Kimball's Bus Architecture 
+- Independent Data Marts
+- Inmon's Corporate Information Factory (CIF)
+- Hybrid Bus & CIF
+
+<br/>
+
+## Kimball's Bus Architecture 
+![](images/kim.png)
+- This architecture uses conformed dimensions, meaning all business departments have the same data dimensions, but not all of them have access to all dimensions
+- Data is not kept at the aggregated level, but rather at the atomic level
+
+<br/>
+
+## Independent Data Marts
+![](images/marts.png)
+- Departments have independent ETL processes and dimensional models
+- These **separate and smaller** dimensional models are called `Data Marts`
+- Different fact tables for the same events, **no conformed dimensions**
+- Uncoordinated efforts can lead to inconsistent views
+- It's a smaller data model focused only one department
+- Independent Data Marts have ETL processes that are designed by specific business departments to meet their analytical needs
+
+
+<br/>
+
+## Inmon's Corporate Information Factory (CIF)
+![](images/cif.png)
+- First ETL is to get an improved copy of the sources (called enterprise dwh), so that all departments can have the same source of truth for their data marts, this tries to make some balance on Independence between departments doing their data marts (not having totally independent ETLs that can lead to inconsistencies)
+- 2 ETL Processes
+	- Source system -> 3NF DB (enterprise dwh) (data acquisition)
+	- 3NF DB -> Departmental data marts (data delivery)
+- The 3NF DB acts as an enterprise wide datastore
+	- Single integrated source of truth for all data marts
+	- Could e accessed by end users if needed
+- Data marts dimensional modeled and unlike Kimball's they are mostly aggregated
+- The Enterprise Data Warehouse provides a normalized data architecture before individual departments build on it
+- The Data Marts use a source 3NF model and add denormalization based on department needs
+
+
+<br/>
+
+## Hybrid Bus & CIF
+![](images/hybrid.png)
+- This model replaced the data marts from CIF with one enterprise dwh to achieve conformed dimensions, taking the best of CIF and Kimball's
