@@ -198,6 +198,7 @@ We still have the movie ad branch dimensions but the month dimension is constant
 ![](images/dice.png)
 
 
+<br/>
 
 ## OLAP Cubes query optimization
 - Business users will typically want to slice, dice, roll up and down all the time
@@ -210,3 +211,24 @@ GROUP BY CUBE(movie, branch, month)
 	- Revenue by movie, branch - Revenue by branch, month - Revenue by movie, month (2)
 	- Revenue by movie, branch, month (3)
 - Saving the output of the CUBE operation and using it is usually enough to answer all forthcoming aggregations from business users without having to process the whole facts table again.
+
+
+
+<br/>
+<br/>
+
+# Data Warehouse Technologies
+## Delivering the analytics to users
+Data is available...
+- In an understandable & performant dimensional model
+- With Conformed dimensions or separate data marts
+- For users to report and visualize
+	- By interacting directly with model
+	- Or in most cases, through BI applications
+- OLAP cubes is a very convenient way for slicing, dicing and drilling
+
+<br/>
+
+## How do we serve these OLAP cubes? OLAB cubes technologies
+- Approach 1: **Pre-aggregate** the OLAP cubes and saves them on a special purpose non-relational database (**MOLAP**)
+- Approach 2: Compute the OLAP cubes **on the fly** from the existing relational databases where the dimensional model resides (**ROLAP**) (more common)
