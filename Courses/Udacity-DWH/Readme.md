@@ -1,3 +1,11 @@
+# Code & Exercises 
+- You can find the environment setup of `docker` with `postgres` and `jupyter` along with the notebooks which cover the below content in practice, all inside the `dwh-notebooks-exercises-with-postgres` folder
+- Below is a general theory explanation while the `dwh-notebooks-exercises-with-postgres` folder` has all the code and practice.
+
+<br/>
+<br/>
+
+# Some  Recap 
 Operational Databases:
 - Excellent for operations as they have no redundancy and high integrity.
 
@@ -16,6 +24,7 @@ A solution is to create two processing modes
 
 Data Warehouse is a system including processes, technologies and data representation that enables us to support analytical processes.
 
+<br/>
 <br/>
 
 # Data Warehouse:
