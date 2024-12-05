@@ -128,7 +128,29 @@ pagila=# \dt
 <br/>
 <br/>
 
-# env file to connect to postgres db from notebook
+# Setup Jupiter with docker
+```bash
+dyab:3NF-2-Star$ docker run --name jupyter -p 8888:8888 -v /path/to/your/notebooks:/home/jovyan/work jupyter/base-notebook
+```
+
+- `/path/to/your/notebooks` should be replaced with the path in which you intend to save your notebooks in, so that the notebooks are not deleted when closing the container.
+
+- you can access jupyter on `localhost:8888`
+
+<br/>
+<br/>
+
+# Running the containers afterwards
+After the above initial creation of the containers, to run them after closing
+```bash
+dyab:3NF-2-Star$ docker start postgres jupyter
+```
+
+
+<br/>
+<br/>
+
+# env file to connect to postgres db from notebook or anywhere
 
 ```
 DATABASE_HOST=172.17.0.3
