@@ -173,3 +173,40 @@ Over the years engineers have tried to build dwh differently optimizing for diff
 ## Hybrid Bus & CIF
 ![](images/hybrid.png)
 - This model replaced the data marts from CIF with one enterprise dwh to achieve conformed dimensions, taking the best of CIF and Kimball's
+
+<br/>
+<br/>
+
+# OLAP Cubes
+Once we are done building our facts and dimensions tables, we are now in a position to start queering and getting insights 
+![](images/cube1.png)
+
+<br/>
+
+## Roll-up & Drill-Down
+- **Roll-Up:** Sum up the sales of each city by country, we went from city (more details) to country (less details) (less columns and rows in branch dimension). To do this our level of granularity should include cites in the first place.
+- **Drill-Down**: Decompose the sales of each city into smaller districts (more columns and rows in branch dimension). To do this our level of granularity should include districts in the first place.
+- The OLAP cubes should store the finest grain of data (atomic data), in case we need to drill down to the lowest level, eg. Country -> City -> District -> Street.
+
+<br/>
+
+## Slice and Dice
+![](images/slice.png)
+We still have the movie ad branch dimensions but the month dimension is constant.
+
+
+![](images/dice.png)
+
+
+
+## OLAP Cubes query optimization
+- Business users will typically want to slice, dice, roll up and down all the time
+```sql
+GROUP BY CUBE(movie, branch, month)
+```
+- The `group by cube` will make one pass through the facts tables and will aggregate all possible combinations of groupings, of length 0, 1, 2, 3 eg:
+	- Total revenue (0)
+	- Revenue by movie - Revenue by branch - Revenue by month (1)
+	- Revenue by movie, branch - Revenue by branch, month - Revenue by movie, month (2)
+	- Revenue by movie, branch, month (3)
+- Saving the output of the CUBE operation and using it is usually enough to answer all forthcoming aggregations from business users without having to process the whole facts table again.
