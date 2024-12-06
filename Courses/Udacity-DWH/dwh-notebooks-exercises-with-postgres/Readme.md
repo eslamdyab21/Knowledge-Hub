@@ -27,7 +27,8 @@ docker.io/library/postgres:17
 Run the container
 ```bash
 dyab:3NF-2-Star$ docker run --name postgres -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres:17
-be3ce0fa145070e5f439762e96a60bec2d4de99d5a4acee213c36d12ea40a8b1```
+```
+
 
 ```bash
 dyab:3NF-2-Star$ docker ps
@@ -169,7 +170,7 @@ dyab:3NF-2-Star/$ docker inspect postgres | grep IPAddress
             "IPAddress": "172.17.0.3",
                     "IPAddress": "172.17.0.3",
 ```
+Theoretically we could get away with leaving the `DATABASE_HOST='postgres'`, where `postgres` here is the name of the container, both containers are in the same network, so it should be able to resolve this name to it's ip. But it doesn't for some reason, we could add a record for it in the `/etc/hosts`, but we're just lazy :)
 
-
-# Now we can start to work on the database in the `3nf2star` and `cube` notebooks. 
+## Now we can start to work on the database in the `3nf2star` and `cube` notebooks. 
 

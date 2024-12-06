@@ -1,6 +1,6 @@
 # Code & Exercises 
 - You can find the environment setup of `docker` with `postgres` and `jupyter` along with the notebooks which cover the below content in practice, all inside the `dwh-notebooks-exercises-with-postgres` folder
-- Below is a general theory explanation while the `dwh-notebooks-exercises-with-postgres` folder` has all the code and practice.
+- Below is a general theory explanation while the `dwh-notebooks-exercises-with-postgres` folder has all the code and practice.
 
 <br/>
 <br/>
@@ -12,7 +12,7 @@ Operational Databases:
 <br/>
 
 Same data sources for operational & analytical processes?
-- it will work, but it will be very slow for analytics because of the too many joins and to complex schema duo to normalization.
+- it will work, but it will be very slow for analytics because of the too many joins and too complex schema duo to normalization.
 
 <br/>
 
