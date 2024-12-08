@@ -1,4 +1,17 @@
+Make phone camera a webcam in linux
+------------------------------------------------------------------------
+1.create a virtual capture device, here its /dev/video5:
+sudo modprobe v4l2loopback video_nr=5 card_label="Virtual Webcam5" exclusive_caps=1
 
+2. install ip webcam in andriod phone and click on stream, it will give an ip
+
+3. capture that stream with ffmpeg and dirct to the virtual capture device you made above:
+ffmpeg -i http://192.168.1.6:8080/video -vf format=yuv420p -f v4l2 /dev/video5
+
+4. to remove the device:
+sudo modprobe -r v4l2loopback
+
+------------------------------------------------------------------------
 Change keyboard layout in awsome:
 ------------------------------------------------------------------------
 localectl list-x11-keymap-layouts  //avalible layouts
